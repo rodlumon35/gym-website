@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;300;400;600&display=swap');
+
+:root {
+  --primary-color: #ff7070;
+  --secondary-color: #ffa8a8;
+  --background-color: rgb(253, 229, 229);
+  --focused-color: #f84747;
+  --title-font: 'Bebas Neue', cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.title {
+  font-size: 5rem;
+  font-family: var(--title-font);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.subtitle {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.w-90 {
+  color: var(--focused-color);
+  width: 90%;
+  margin: 3% auto;
+}
+
+i.fas {
+  color: #ffff;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.no-link {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.btn {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px;
+  width: 45%;
+  background-color: var(--primary-color);
+  color: #ffff;
+  margin-top: 5%;
+  cursor: pointer;
+  transition: background-color 200ms ease-in;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+}

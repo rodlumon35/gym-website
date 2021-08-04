@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/c8c273e1c8.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/generic.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Gimnasio</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="subtitle"><img src="./assets/img/logo.svg" alt="logo.png"> Gimnasio</h1>
+  </header>
+  <section id="main-content">
+    <section id="information">
+      <h3 class="text-primary subtitle text-uppercase">Bienvenido al club <div class="rectangle"></div></h3>
+      <h3 class="subtitle">consigue una</h3>
+      <h3 class="title">figura perfecta</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sit quis quam! Tempore laboriosam explicabo fuga reprehenderit mollitia in est, harum officia dolor necessitatibus distinctio odio quibusdam voluptatem qui reiciendis!</p>
+      <a href="#principal-content" class="no-link btn">ver más</a>
+    </section>
+    <section id="gallery">
+      <iframe src="./carousel/carousel.html" width="100%" height="100%" frameborder="0"></iframe>
+    </section>
+  </section>
+
+  <hr class="w-90">
+
+  <main id="principal-content">
+    <aside id="sidebar">
+      <div>
+        <a href="schedule/schedule.html" class="subtitle no-link menu-item active" target="frame"><i class="fas fa-calendar-alt"></i> Horarios</a>
+      </div>
+      <div>
+        <a href="activities/activities.html" class="subtitle no-link menu-item" target="frame"><i class="fas fa-running"></i> Actividades</a>
+      </div>
+      <div>
+        <a href="contact-us/contact.html" class="subtitle no-link menu-item" target="frame"><i class="fas fa-id-card"></i> Contáctanos</a>
+      </div>
+    </aside>
+    <section id="content">
+      <iframe  id="frame" name="frame" src="./schedule/schedule.html" frameborder="0"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">
+      <h1 class="subtitle"><img src="./assets/img/logo.svg" alt="logo.png"> Gimnasio</h1>
+    </div>
+    <div class="author">
+      <div class="subtitle"><i class="fas fa-copyright"></i> Luis Rodriguez 2021</div>
+    </div>
+  </footer>
+
+  <script>
+    const MENU_ITEMS = document.querySelectorAll(".menu-item");
+    MENU_ITEMS.forEach(item => item.addEventListener("click", (e) => {
+      MENU_ITEMS.forEach(item => item.classList.remove("active"));
+      e.target.classList.add("active");
+    }))
+  </script>
+</body>
+
+</html>

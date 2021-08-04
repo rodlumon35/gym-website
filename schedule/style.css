@@ -1,0 +1,57 @@
+:root {
+  --primary-color: #ff7070;
+  --secondary-color: #ffa8a8;
+  --background-color: rgb(253, 229, 229);
+  --focused-color: #f84747;
+  --title-font: 'Bebas Neue', cursive;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.card {
+  width: 40vh;
+  height: 30vh;
+  background-color: #ffff;
+  border: 1px solid #ff7070;
+  margin: 2% auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .day {
+  background-color: var(--primary-color);
+  text-align: center;
+  color: #ffff;
+  padding: 5px;
+}
+
+.card .schedule {
+  font-weight: 300;
+  text-align: center;
+  padding: 5px;
+}
+
+.card .exercise-type {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 800;
+  padding: 5px;
+}
+
+.card .description {
+  padding: 5px;
+}
+
+.card .instructor {
+  text-align: right;
+  font-weight: 300;
+  padding: 5px;
+  color: var(--focused-color);
+}

@@ -1,0 +1,147 @@
+:root {
+  --primary-color: #ff7070;
+  --secondary-color: #ffa8a8;
+  --background-color: rgb(253, 229, 229);
+  --focused-color: #f84747;
+  --title-font: 'Bebas Neue', cursive;
+}
+
+html {
+  background: linear-gradient(360deg, rgba(253, 196, 196, 0.568) 0%, rgba(253, 229, 229, 0.411) 35%, rgba(255, 255, 255, 1) 100%)
+}
+
+/* header */
+header {
+  margin-top: 1%
+}
+
+header h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+header h1 img {
+  vertical-align: bottom;
+  width: 2%;
+  height: auto;
+}
+
+/* Main content settings */
+
+#main-content {
+  margin-top: 2%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#information {
+  width: 40%;
+}
+
+#information h3.subtitle {
+  font-size: 3rem;
+}
+
+#information h3.text-uppercase {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+#information .rectangle {
+  border: 8px solid var(--primary-color);
+  height: 7rem;
+  width: 4.5rem;
+  display: inline-block;
+  margin-left: 2.5%;
+}
+
+#information :nth-child(2) {
+  font-size: 5rem;
+  font-weight: 400
+}
+
+#information a {
+  display: block;
+}
+
+#main-content #gallery {
+  height: 80vh;
+  width: 50%;
+}
+
+/* sidebar settings */
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#sidebar {
+  padding: 5px;
+  height: 40vh;
+  width: 20%;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+#sidebar div {
+  width: 100%;
+  text-align: center;
+}
+
+#sidebar a {
+  padding: 1%;
+  font-size: 1.5rem;
+}
+
+#sidebar .active {
+  padding: 2%;
+  background-color: var(--focused-color);
+}
+
+#content {
+  width: 100%;
+  height: 100vh;
+}
+
+#content #frame {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* footer settings */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffff;
+  padding: 2%;
+  margin-top: 2%;
+}
+
+footer div.author div.subtitle {
+  font-size: 1.2rem;
+}
+
+footer div.logo h1 {
+  font-size: 1.2rem;
+}
+
+footer div.logo img {
+  vertical-align: middle;
+  width: 15%;
+  height: auto;
+}
+
+footer div.author i {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
