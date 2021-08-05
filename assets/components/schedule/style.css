@@ -84,14 +84,14 @@ section#instructors-2 {
 
 .card .schedule {
   font-weight: 300;
-  text-align: center;
+  text-align: right;
   padding: 5px;
   display: inline-block;
 }
 
 .card .exercise-type {
   font-size: 1.5rem;
-  text-align: center;
+  text-align: right;
   font-weight: 800;
   padding: 5px;
   display: inline-block;
