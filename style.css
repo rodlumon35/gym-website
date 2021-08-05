@@ -152,3 +152,45 @@ footer div.author i {
   color: var(--primary-color);
   font-size: 2rem;
 }
+
+@media (max-width: 1200px) {
+
+  #information h3.subtitle {
+    font-size: 2rem;
+  }
+
+  #information {
+    width: 100vw;
+    height: 40vh;
+    min-width: 500px;
+    padding: 10px
+  }
+
+  #information .rectangle {
+    height: 5rem;
+    width: 3.5rem;
+  }
+
+  #main-content #gallery {
+    height: 40vh;
+    width: 100vw;
+    max-height: 600px;
+    min-width: 500px;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  #sidebar {
+    flex-direction: row;
+    width: 100%;
+    height: 5vh;
+    padding: 5px;
+    align-items: center;
+  }
+
+  #sidebar div a {
+    font-size: 1rem;
+  }  
+}
