@@ -134,10 +134,7 @@ footer {
   margin-top: 2%;
 }
 
-footer div.author div.subtitle {
-  font-size: 1.2rem;
-}
-
+footer div.author div.subtitle,
 footer div.logo h1 {
   font-size: 1.2rem;
 }
@@ -190,7 +187,49 @@ footer div.author i {
     align-items: center;
   }
 
+  #sidebar div a.subtitle i.fas {
+    font-size: 1.2rem;
+  }
+
+  footer div.author i {
+    font-size: .8rem;
+  }
+
+  footer div.author div.subtitle,
+  footer div.logo h1 {
+    font-size: .8rem;
+  }
+
+  footer div.logo {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+
+  header h1 img {
+    vertical-align: middle;
+    min-width: 20px;
+  }
+
+  #information h3.subtitle {
+    font-size: 1.2rem;
+  }
+
+  #information .rectangle {
+    display: none;
+  }
+
+  #information {    
+    min-width: 200px;
+  }
+
+  #main-content #gallery {
+    max-height: 300px;
+    min-width: 100px;
+  }
+
   #sidebar div a {
-    font-size: 1rem;
-  }  
+    font-size: .9rem;
+  }
 }

@@ -139,3 +139,28 @@ main {
     margin: 5% auto;
   }
 }
+
+@media (max-width: 576px) {
+
+  h1.title {
+    font-size: 1.5rem;
+  }
+
+  h2.subtitle,
+  h3.subtitle {
+    font-size: 1.1rem;
+  }
+
+  .illustration {
+    height: 45vh;
+  }
+
+  .illustration .image img {
+    margin: 1% auto;
+  }
+
+  .specs {
+    padding: 5%;
+    height: 55vh;
+  }
+}

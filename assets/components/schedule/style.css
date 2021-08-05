@@ -149,5 +149,11 @@ section#controllers div a i:hover {
 
   .schedule-information {
     width: 100%;
+    margin-top: 2%;
+  }
+
+  .description,
+  hr {
+    display: none;
   }
 }
