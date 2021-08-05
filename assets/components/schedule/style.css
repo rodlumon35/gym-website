@@ -8,11 +8,12 @@
 
 html {
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 main {
   display: flex;
-  overflow: hidden;
+  overflow: visible;
   height: 100%;
   background-color: rgba(253, 153, 153, 0.233);
   backdrop-filter: blur(4px);
@@ -78,7 +79,7 @@ section#instructors-2 {
   border-radius: 50%;
 }
 
-.card .schedule-information {
+.schedule-information {
   width: 100%;
   min-width: 300px;
 }
@@ -117,11 +118,10 @@ section#controllers {
   justify-content: space-around;
   height: 100vh;
   width: 40px;
-  top: 0; 
+  top: 0;
+  right: 0;
   position: sticky;
   background-color: #ffff;
-  overflow: auto;
-  z-index: 1;
 }
 
 section#controllers div a i {
