@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/c8c273e1c8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../generic.css">
+  <title>Contáctanos</title>
+</head>
+
+<body>
+  <section id="contact-us">
+    <section id="contact-information">
+      <h4 class="title">Contacta con nosotros</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, ratione. Cumque praesentium velit qui fugit.
+        Ex
+        earum incidunt quisquam ipsam, exercitationem quae aperiam at iusto nisi doloremque placeat sapiente. Facere!
+      </p>
+      <div class="information">
+        <div>
+          <i class="fas fa-map-marker-alt"></i> <b>Dirección:</b> 770 Carriage Lane, GREEN RIVER, Wyomingv
+        </div>
+        <div>
+          <i class="fas fa-phone"></i> <b>Teléfono:</b> 567-432-9834
+        </div>
+        <div>
+          <i class="fas fa-envelope-square"></i> <b>Correo electrónico:</b> email@example.com
+        </div>
+      </div>
+    </section>
+    <form action="#">
+      <h4 class="title">¡Envía un mensaje!</h4>
+      <input type="text" class="toggleable" name="name" id="name">
+      <label for="name" class="subtitle toggleable">Nombre:</label>
+      <input type="text" class="toggleable" name="surname" id="surname">
+      <label for="surname" class="subtitle toggleable">Apellido:</label>
+      <input type="email" class="toggleable" name="email" id="email">
+      <label for="email" class="subtitle toggleable">Email:</label>
+      <label for="date" class="subtitle">Fecha:</label>
+      <input type="date" name="date" id="date">
+      <label for="options" class="subtitle">Motivo de consulta</label>
+      <select name="options" id="options">
+        <option value="1">Opcion 1</option>
+        <option value="2">Opcion 2</option>
+        <option value="3">Opcion 3</option>
+      </select>
+      <input type="submit" class="btn" value="Enviar mensaje">
+    </form>
+  </section>
+
+  <script>
+    const ALL_FILLABLE_INPUTS = document.querySelectorAll(".toggleable");
+
+    ALL_FILLABLE_INPUTS.forEach(e => e.addEventListener("keyup", isFilled, e));
+    console.log(this);
+    function isFilled(e) {
+      console.log(this);
+      this.value === "" ? this.classList.remove("filled") : this.classList.add("filled");
+    }
+  </script>
+</body>
+
+</html>

@@ -13,6 +13,7 @@ html {
 
 main {
   height: 100vh;
+  display: flex;
 }
 
 .activity {
@@ -46,7 +47,7 @@ main {
 .illustration .image img {
   width: 100%;
   margin: 10% auto;
-  max-height: 600px;
+  max-height: 700px;
 }
 
 .specs {
@@ -108,4 +109,33 @@ main {
 .controllers a {
   display: block;
   width: 45%;
+}
+
+@media (max-width: 768px) {
+  .activity {
+    flex-direction: column;
+  }
+
+  .illustration {
+    width: 100vw;
+    height: 65vh;
+  }
+
+  .specs {
+    width: 100vw;
+    height: 35vh;
+  }
+
+  h1.title {
+    font-size: 2.5rem;
+  }
+
+  h2.subtitle,
+  h3.subtitle {
+    font-size: 1.5rem;
+  }
+
+  .illustration .image img {
+    margin: 5% auto;
+  }
 }
