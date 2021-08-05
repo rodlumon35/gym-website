@@ -21,6 +21,24 @@ html {
   scroll-behavior: smooth;
 }
 
+/* scrollbar custom */
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--focused-color);
+}
+
 .title {
   font-size: 5rem;
   font-family: var(--title-font);

@@ -23,6 +23,7 @@ header h1 {
 header h1 img {
   vertical-align: bottom;
   width: 2%;
+  min-width: 30px;
   height: auto;
 }
 
@@ -32,12 +33,14 @@ header h1 img {
   margin-top: 2%;
   height: 80vh;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
 
 #information {
-  width: 40%;
+  width: 40vw;
+  min-width: 500px;
 }
 
 #information h3.subtitle {
@@ -68,7 +71,8 @@ header h1 img {
 
 #main-content #gallery {
   height: 80vh;
-  width: 50%;
+  width: 50vw;
+  min-width: 600px;
 }
 
 /* sidebar settings */
@@ -77,6 +81,8 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-image: url(https://img2.goodfon.com/wallpaper/nbig/4/ff/muscles-bodybuilder-shtanga.jpg);
+  background-size: cover;
 }
 
 #sidebar {
@@ -100,6 +106,7 @@ main {
   font-size: 1.5rem;
 }
 
+#sidebar a:hover,
 #sidebar .active {
   padding: 2%;
   background-color: var(--focused-color);

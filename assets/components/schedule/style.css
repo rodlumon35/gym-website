@@ -1,0 +1,155 @@
+:root {
+  --primary-color: #ff7070;
+  --secondary-color: #ffa8a8;
+  --background-color: rgb(253, 229, 229);
+  --focused-color: #f84747;
+  --title-font: 'Bebas Neue', cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+  background-color: rgba(253, 153, 153, 0.233);
+  backdrop-filter: blur(4px);
+}
+
+main div {
+  width: 100%;
+  margin: 0;
+}
+
+hr {
+  color: var(--focused-color);
+  margin: 2% auto;
+  width: 95%;
+}
+
+section#instructors-1,
+section#instructors-2 {
+  margin: 2.5% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  overflow: auto;
+  width: 99%;
+  height: 25vh;
+  min-height: 250px;
+  background-color: #ffff;
+  border: 1px solid #ff7070;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+}
+
+.card .day {
+  background-color: var(--primary-color);
+  text-align: center;
+  color: #ffff;
+  padding: 5px;
+}
+
+.card .content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70%;
+}
+
+.instructor-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  min-width: 50px;
+}
+
+.instructor-photo img {
+  display: block;
+  border-radius: 50%;
+}
+
+.card .schedule-information {
+  width: 100%;
+  min-width: 300px;
+}
+
+.card .schedule {
+  font-weight: 300;
+  text-align: center;
+  padding: 5px;
+  display: inline-block;
+}
+
+.card .exercise-type {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 800;
+  padding: 5px;
+  display: inline-block;
+}
+
+.card .description {
+  padding: 5px;
+}
+
+.card .instructor {
+  text-align: right;
+  font-weight: 300;
+  padding: 5px;
+  color: var(--focused-color);
+}
+
+/* up down controller */
+
+section#controllers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+  width: 40px;
+  top: 0; 
+  position: sticky;
+  background-color: #ffff;
+  overflow: auto;
+  z-index: 1;
+}
+
+section#controllers div a i {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  transition: color 0.2s ease
+}
+
+section#controllers div a i:hover {
+  color: var(--focused-color);
+}
+
+
+@media (max-width: 768px) {
+
+  .card {
+    height: 500px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .instructor-photo {
+    width: 100%;
+  }
+
+  .schedule-information {
+    width: 100%;
+  }
+}
